@@ -8,6 +8,7 @@
 
 #include "scene.h"
 #include "background.h"
+#include "ship.h"
 
 using namespace zge;
 
@@ -15,4 +16,7 @@ void TenthStyleScene::on_enter()
 {
     ZNodeRef background = std::make_shared<TenthStyleBackground>();
     add_child(background);
+    
+    ZNodeRef ship = std::make_shared<TenthStyleShip>();
+    add_child(ship);
 }

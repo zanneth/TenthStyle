@@ -54,8 +54,12 @@ public:
     void unbind_texture();
     
     void add_light(ZLightRef light);
-    void add_lights(std::vector<ZLightRef> lights);
+    void add_lights(const std::vector<ZLightRef> &lights);
+    void remove_lights(const std::vector<ZLightRef> &lights);
     void clear_lights();
+    
+    void enable_depth_testing();
+    void disable_depth_testing();
     
     /* Drawing */
     void draw_array(ZRenderMode mode, ZVertexArrayRef varray, unsigned first_idx, size_t count);

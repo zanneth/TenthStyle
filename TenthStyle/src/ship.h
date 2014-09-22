@@ -1,5 +1,5 @@
 //
-//  background.h
+//  ship.h
 //  TenthStyle
 //
 //  Created by Charles Magahern on 9/20/14.
@@ -10,11 +10,15 @@
 
 #include <zge/zge.h>
 
-class TenthStyleBackground : public zge::ZNode {
+class TenthStyleShip : public zge::ZNode {
 public:
-    TenthStyleBackground();
+    TenthStyleShip();
     
 private:
     void _setup_camera();
-    void _setup_background();
+    void _setup_lights();
+    void _setup_model();
+    
+private:
+    zge::ZNodeRef _ship_node;
 };

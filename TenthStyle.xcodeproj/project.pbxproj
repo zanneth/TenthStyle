@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0C362EC819CE696700344EB5 /* background.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C362EC619CE696700344EB5 /* background.cpp */; };
+		0C362ECB19CE768900344EB5 /* ship.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C362EC919CE768900344EB5 /* ship.cpp */; };
+		0C362ECC19CE787500344EB5 /* TenthStyle.3ds in Resources */ = {isa = PBXBuildFile; fileRef = 0C362EBF19CE551900344EB5 /* TenthStyle.3ds */; };
 		0C7D3D9219C5002A003AC9E9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C7D3D9119C5002A003AC9E9 /* main.cpp */; };
 		0C7D3DF019C5023A003AC9E9 /* libZGE.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C7D3DED19C5023A003AC9E9 /* libZGE.dylib */; };
 		0C7D3DF519C503FA003AC9E9 /* libZGE.dylib in Copy Required Libraries */ = {isa = PBXBuildFile; fileRef = 0C7D3DED19C5023A003AC9E9 /* libZGE.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
@@ -38,6 +40,8 @@
 		0C362EBF19CE551900344EB5 /* TenthStyle.3ds */ = {isa = PBXFileReference; lastKnownFileType = file; path = TenthStyle.3ds; sourceTree = "<group>"; };
 		0C362EC619CE696700344EB5 /* background.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = background.cpp; sourceTree = "<group>"; };
 		0C362EC719CE696700344EB5 /* background.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = background.h; sourceTree = "<group>"; };
+		0C362EC919CE768900344EB5 /* ship.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ship.cpp; sourceTree = "<group>"; };
+		0C362ECA19CE768900344EB5 /* ship.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ship.h; sourceTree = "<group>"; };
 		0C7D3D8C19C5002A003AC9E9 /* TenthStyle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TenthStyle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C7D3D9019C5002A003AC9E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C7D3D9119C5002A003AC9E9 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
@@ -119,6 +123,8 @@
 				0C7D3E0819C5120A003AC9E9 /* scene.h */,
 				0C7D3E0719C5120A003AC9E9 /* scene.cpp */,
 				0C7D3D9119C5002A003AC9E9 /* main.cpp */,
+				0C362ECA19CE768900344EB5 /* ship.h */,
+				0C362EC919CE768900344EB5 /* ship.cpp */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -190,6 +196,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C362ECC19CE787500344EB5 /* TenthStyle.3ds in Resources */,
 				0C7D3E0E19C51633003AC9E9 /* scrolling_bg.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -204,6 +211,7 @@
 				0C7D3DFE19C505EA003AC9E9 /* application.cpp in Sources */,
 				0C7D3E0919C5120A003AC9E9 /* scene.cpp in Sources */,
 				0C7D3D9219C5002A003AC9E9 /* main.cpp in Sources */,
+				0C362ECB19CE768900344EB5 /* ship.cpp in Sources */,
 				0C362EC819CE696700344EB5 /* background.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
