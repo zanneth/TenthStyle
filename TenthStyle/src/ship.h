@@ -17,8 +17,5 @@ public:
 private:
     void _setup_camera();
     void _setup_lights();
-    void _setup_model();
-    
-private:
-    zge::ZNodeRef _ship_node;
+    void _setup_models();
 };

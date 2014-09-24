@@ -9,6 +9,7 @@
 
 #include <zge/foundation.h>
 #include <zge/vector.h>
+#include <initializer_list>
 
 BEGIN_ZGE_NAMESPACE
 
