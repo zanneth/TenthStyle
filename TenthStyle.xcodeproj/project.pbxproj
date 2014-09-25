@@ -7,36 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C10FB7D19D3CCA80010815F /* ZGE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C10FB7C19D3CCA80010815F /* ZGE.framework */; };
+		0C10FB8019D3CD3D0010815F /* ZGE.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 0C10FB7C19D3CCA80010815F /* ZGE.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		0C362EC819CE696700344EB5 /* background.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C362EC619CE696700344EB5 /* background.cpp */; };
 		0C362ECB19CE768900344EB5 /* ship.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C362EC919CE768900344EB5 /* ship.cpp */; };
 		0C362ECC19CE787500344EB5 /* TenthStyle.3ds in Resources */ = {isa = PBXBuildFile; fileRef = 0C362EBF19CE551900344EB5 /* TenthStyle.3ds */; };
 		0C7D3D9219C5002A003AC9E9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C7D3D9119C5002A003AC9E9 /* main.cpp */; };
-		0C7D3DF019C5023A003AC9E9 /* libZGE.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C7D3DED19C5023A003AC9E9 /* libZGE.dylib */; };
-		0C7D3DF519C503FA003AC9E9 /* libZGE.dylib in Copy Required Libraries */ = {isa = PBXBuildFile; fileRef = 0C7D3DED19C5023A003AC9E9 /* libZGE.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		0C7D3DFE19C505EA003AC9E9 /* application.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C7D3DFC19C505EA003AC9E9 /* application.cpp */; };
-		0C7D3E0319C50679003AC9E9 /* lib3ds-2.0.dylib in Copy Required Libraries */ = {isa = PBXBuildFile; fileRef = 0C7D3DFF19C5066F003AC9E9 /* lib3ds-2.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		0C7D3E0419C50679003AC9E9 /* libSDL2-2.0.0.dylib in Copy Required Libraries */ = {isa = PBXBuildFile; fileRef = 0C7D3E0019C5066F003AC9E9 /* libSDL2-2.0.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		0C7D3E0919C5120A003AC9E9 /* scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C7D3E0719C5120A003AC9E9 /* scene.cpp */; };
 		0C7D3E0E19C51633003AC9E9 /* scrolling_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C7D3E0D19C51633003AC9E9 /* scrolling_bg.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		0C7D3DF219C503E5003AC9E9 /* Copy Required Libraries */ = {
+		0C10FB7F19D3CD2D0010815F /* Copy Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = Contents/lib;
-			dstSubfolderSpec = 1;
+			dstPath = "";
+			dstSubfolderSpec = 10;
 			files = (
-				0C7D3E0319C50679003AC9E9 /* lib3ds-2.0.dylib in Copy Required Libraries */,
-				0C7D3E0419C50679003AC9E9 /* libSDL2-2.0.0.dylib in Copy Required Libraries */,
-				0C7D3DF519C503FA003AC9E9 /* libZGE.dylib in Copy Required Libraries */,
+				0C10FB8019D3CD3D0010815F /* ZGE.framework in Copy Frameworks */,
 			);
-			name = "Copy Required Libraries";
+			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0C10FB7C19D3CCA80010815F /* ZGE.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ZGE.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/TenthStyle-emynnocozliscabqzensaoczcnif/Build/Products/Debug/ZGE.framework"; sourceTree = "<group>"; };
 		0C362EBF19CE551900344EB5 /* TenthStyle.3ds */ = {isa = PBXFileReference; lastKnownFileType = file; path = TenthStyle.3ds; sourceTree = "<group>"; };
 		0C362EC619CE696700344EB5 /* background.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = background.cpp; sourceTree = "<group>"; };
 		0C362EC719CE696700344EB5 /* background.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = background.h; sourceTree = "<group>"; };
@@ -45,11 +42,8 @@
 		0C7D3D8C19C5002A003AC9E9 /* TenthStyle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TenthStyle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C7D3D9019C5002A003AC9E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C7D3D9119C5002A003AC9E9 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		0C7D3DED19C5023A003AC9E9 /* libZGE.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libZGE.dylib; sourceTree = "<group>"; };
 		0C7D3DFC19C505EA003AC9E9 /* application.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = application.cpp; sourceTree = "<group>"; };
 		0C7D3DFD19C505EA003AC9E9 /* application.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = application.h; sourceTree = "<group>"; };
-		0C7D3DFF19C5066F003AC9E9 /* lib3ds-2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "lib3ds-2.0.dylib"; sourceTree = "<group>"; };
-		0C7D3E0019C5066F003AC9E9 /* libSDL2-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libSDL2-2.0.0.dylib"; sourceTree = "<group>"; };
 		0C7D3E0719C5120A003AC9E9 /* scene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = scene.cpp; sourceTree = "<group>"; };
 		0C7D3E0819C5120A003AC9E9 /* scene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scene.h; sourceTree = "<group>"; };
 		0C7D3E0D19C51633003AC9E9 /* scrolling_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scrolling_bg.png; sourceTree = "<group>"; };
@@ -60,17 +54,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C7D3DF019C5023A003AC9E9 /* libZGE.dylib in Frameworks */,
+				0C10FB7D19D3CCA80010815F /* ZGE.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C10FB7E19D3CCB60010815F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C10FB7C19D3CCA80010815F /* ZGE.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		0C7D3D8319C5002A003AC9E9 = {
 			isa = PBXGroup;
 			children = (
 				0C7D3D8E19C5002A003AC9E9 /* TenthStyle */,
+				0C10FB7E19D3CCB60010815F /* Frameworks */,
 				0C7D3D8D19C5002A003AC9E9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -86,7 +89,6 @@
 		0C7D3D8E19C5002A003AC9E9 /* TenthStyle */ = {
 			isa = PBXGroup;
 			children = (
-				0C7D3DEA19C5023A003AC9E9 /* lib */,
 				0C7D3E0C19C51633003AC9E9 /* resources */,
 				0C7D3DF119C502B4003AC9E9 /* src */,
 				0C7D3D8F19C5002A003AC9E9 /* Supporting Files */,
@@ -101,16 +103,6 @@
 			);
 			name = "Supporting Files";
 			path = xcode;
-			sourceTree = "<group>";
-		};
-		0C7D3DEA19C5023A003AC9E9 /* lib */ = {
-			isa = PBXGroup;
-			children = (
-				0C7D3DFF19C5066F003AC9E9 /* lib3ds-2.0.dylib */,
-				0C7D3E0019C5066F003AC9E9 /* libSDL2-2.0.0.dylib */,
-				0C7D3DED19C5023A003AC9E9 /* libZGE.dylib */,
-			);
-			path = lib;
 			sourceTree = "<group>";
 		};
 		0C7D3DF119C502B4003AC9E9 /* src */ = {
@@ -148,7 +140,7 @@
 				0C7D3D8819C5002A003AC9E9 /* Sources */,
 				0C7D3D8919C5002A003AC9E9 /* Frameworks */,
 				0C7D3D8A19C5002A003AC9E9 /* Resources */,
-				0C7D3DF219C503E5003AC9E9 /* Copy Required Libraries */,
+				0C10FB7F19D3CD2D0010815F /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -306,11 +298,7 @@
 					"$(SRCROOT)/TenthStyle/include",
 				);
 				INFOPLIST_FILE = TenthStyle/xcode/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../lib";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/TenthStyle/lib",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -326,11 +314,7 @@
 					"$(SRCROOT)/TenthStyle/include",
 				);
 				INFOPLIST_FILE = TenthStyle/xcode/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../lib";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/TenthStyle/lib",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

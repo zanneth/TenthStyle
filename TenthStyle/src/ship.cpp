@@ -26,7 +26,7 @@ void TenthStyleShip::_setup_camera()
 {
     Z3DCameraRef camera = std::make_shared<Z3DCamera>();
     camera->set_position({-0.5, 0.0, 0.0});
-    camera->set_look({0.4, 0.0, -1.0});
+    camera->set_look({-0.1, 0.0, -1.0});
     set_camera(camera);
 }
 
