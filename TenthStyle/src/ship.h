@@ -12,10 +12,17 @@
 
 class TenthStyleShip : public zge::ZNode {
 public:
-    TenthStyleShip();
+    TenthStyleShip(zge::ZRenderContextRef context);
+    
+    ZGE_DEFINE_SREF_FUNCTIONS(TenthStyleShip);
     
 private:
     void _setup_camera();
     void _setup_lights();
     void _setup_models();
+    
+private:
+    zge::ZRenderContextRef _context;
 };
+
+ZGE_DEFINE_SREF_TYPE(TenthStyleShip);

@@ -12,11 +12,16 @@
 
 using namespace zge;
 
+TenthStyleScene::TenthStyleScene(zge::ZRenderContextRef context) :
+    _context(context),
+    _bgnode(nullptr)
+{}
+
 void TenthStyleScene::on_enter()
 {
-    ZNodeRef background = std::make_shared<TenthStyleBackground>();
+    ZNodeRef background = TenthStyleBackground::create(_context);
     add_child(background);
     
-    ZNodeRef ship = std::make_shared<TenthStyleShip>();
+    ZNodeRef ship = TenthStyleShip::create(_context);
     add_child(ship);
 }

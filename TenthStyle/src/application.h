@@ -14,4 +14,7 @@ class TenthStyleApplication : public zge::ZApplication {
 public:
     using zge::ZApplication::ZApplication;
     void application_ready() override;
+    
+private:
+    zge::ZEngineRef _engine;
 };

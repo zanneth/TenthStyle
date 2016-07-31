@@ -10,7 +10,8 @@
 
 using namespace zge;
 
-TenthStyleBackground::TenthStyleBackground() : ZNode()
+TenthStyleBackground::TenthStyleBackground(zge::ZRenderContextRef context) :
+    _context(context)
 {
     _setup_camera();
     _setup_background();
@@ -20,7 +21,7 @@ TenthStyleBackground::TenthStyleBackground() : ZNode()
 
 void TenthStyleBackground::_setup_camera()
 {
-    ZRect viewport = ZEngine::instance()->get_viewport_rect();
+    ZRect viewport = _context->get_viewport();
     float aspect = viewport.size.width / viewport.size.height;
     
     ZOrthoCameraRef camera = std::make_shared<ZOrthoCamera>();
@@ -30,11 +31,11 @@ void TenthStyleBackground::_setup_camera()
 
 void TenthStyleBackground::_setup_background()
 {
-    ZResourceBundle *resbundle = ZResourceBundle::get_main_bundle();
+    const ZResourceBundle *resbundle = ZResourceBundle::get_main_bundle();
     ZImageRef bgimg = std::make_shared<ZImage>(resbundle->get_path_for_resource("scrolling_bg.png"));
     ZSize2D bgimg_size = bgimg->get_size();
     float bgimg_aspect = bgimg_size.width / bgimg_size.height;
-    ZTextureRef bgtexture = std::make_shared<ZTexture>(bgimg);
+    ZTextureRef bgtexture = _context->create_texture(bgimg);
     
     ZSpriteNodeRef bg_node = std::make_shared<ZSpriteNode>();
     bg_node->set_texture(bgtexture);

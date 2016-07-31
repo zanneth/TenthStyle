@@ -13,7 +13,8 @@
 
 using namespace zge;
 
-TenthStyleShip::TenthStyleShip() : ZNode()
+TenthStyleShip::TenthStyleShip(zge::ZRenderContextRef context) :
+    _context(context)
 {
     _setup_camera();
     _setup_lights();
@@ -27,6 +28,7 @@ void TenthStyleShip::_setup_camera()
     Z3DCameraRef camera = std::make_shared<Z3DCamera>();
     camera->set_position({-0.5, 0.0, 0.0});
     camera->set_look({-0.1, 0.0, -1.0});
+    camera->set_viewport_rect(_context->get_viewport());
     set_camera(camera);
 }
 
@@ -40,7 +42,7 @@ void TenthStyleShip::_setup_lights()
 
 void TenthStyleShip::_setup_models()
 {
-    ZResourceBundle *bundle = ZResourceBundle::get_main_bundle();
+    const ZResourceBundle *bundle = ZResourceBundle::get_main_bundle();
     std::string ship_model_path = bundle->get_path_for_resource("TenthStyle.3ds");
     ZModelRef ship_model = std::make_shared<ZModel>(ship_model_path);
     
